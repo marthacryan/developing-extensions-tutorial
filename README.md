@@ -16,11 +16,11 @@ You can find example code in the [examples](https://github.com/marthacryan/devel
   * What are extensions?
   * Example Extensions
   * Installing prebuilt vs source
+  * Good documentation for developing extensions.
 * Anatomy of an extension (Alex)
   * JupyterLab extension (20 minutes + 30 minute exercise)
 * Break: 10 minutes
 * What to do when things go wrong? (30 minutes + 30 minute exercise) (Piyush)
-  * Good documentation for developing extensions.
   * Debugging tutorial
 * Working on your own extension (semi-guided on an extension you would like to create (45 minutes + break?)
   * Jupyter Server extension
