@@ -1,4 +1,5 @@
 # Developing Extensions Tutorial
+JupyterLab is a modern interactive development environment from Project Jupyter for scientific exploration. Users can install or write third-party extensions to customize or extend JupyterLab, enabling them to, for example, view custom file formats, interact with external services, or display their data (interactive maps, tables, plots, etc.). In this tutorial, attendees will be guided through the process of creating a basic extension and taught about the core components that power JupyterLab. 
 
 ## Prerequisites
 * Python >= 3.7
