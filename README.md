@@ -14,6 +14,7 @@ You can find example code in the [examples](https://github.com/marthacryan/devel
   * Meet the instructors
 * Exploring extensions (15 minutes) (Martha)
   * What are extensions?
+  * Example Extensions
   * Installing prebuilt vs source
 * Anatomy of an extension (Alex)
   * JupyterLab extension (20 minutes + 30 minute exercise)
