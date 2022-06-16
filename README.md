@@ -29,3 +29,9 @@ You can find example code in the [examples](https://github.com/marthacryan/devel
 
 ## Slides 
 **Note**: Slides can be found [here](https://docs.google.com/presentation/d/1Sg2gdaniTo6IPwxgW9C2RyuJHTCJGm30PkyaKIpB0g4/edit?usp=sharing) while in development, but we'll move them into the slides directory when finalized
+
+# About the Instructors
+* Martha and Alex are software engineers at the IBM Center for Open Source Data and AI Technologies. They are both contributors on [JupyterLab](https://github.com/jupyterlab/jupyterlab) and [Elyra](https://github.com/elyra-ai/elyra). This is a video of a previous tutorial on developing JupyterLab extensions: https://www.youtube.com/watch?v=_ZexgrCGttU&ab_channel=JupyterCon 
+
+* Piyush is a software engineer at Amazon Web Services working on [JupyterLab](https://github.com/jupyterlab/jupyterlab).
+
