@@ -3,7 +3,7 @@
 ## Prerequisites
 
 ## Tutorial Code
-You can find example code in the (examples)[https://github.com/marthacryan/developing-extensions-tutorial] directory.
+You can find example code in the [examples](https://github.com/marthacryan/developing-extensions-tutorial) directory.
 
 ## Agenda
 * Introduction (5 minutes):
