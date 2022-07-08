@@ -4,6 +4,7 @@ JupyterLab is a modern interactive development environment from Project Jupyter 
 ## Prerequisites
 * Python >= 3.7
 * Node.js >= 12 (LTS version preferred)
+* VSCode
 * (Optional) Note: We'll be using conda as a virtual environment, see [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) for instructions on installation of conda
 
 ## Tutorial Code
