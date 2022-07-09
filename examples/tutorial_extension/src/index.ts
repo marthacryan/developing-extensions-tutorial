@@ -7,7 +7,6 @@ import { ILauncher } from '@jupyterlab/launcher';
 import { ISettingRegistry } from '@jupyterlab/settingregistry';
 import { jupyterIcon } from '@jupyterlab/ui-components';
 
-import { requestAPI } from './handler';
 import { TutorialWidget } from './widget';
 
 /**
@@ -32,18 +31,6 @@ const plugin: JupyterFrontEndPlugin<void> = {
           console.error('Failed to load settings for tutorial-extension.', reason);
         });
     }
-
-    // This is an example API call to the server extension associated with
-    // this jupyterlab extension. It uses the generated handler.ts utility
-    requestAPI<any>('get_example')
-      .then(data => {
-        console.log(data);
-      })
-      .catch(reason => {
-        console.error(
-          `The tutorial_extension server extension appears to be missing.\n${reason}`
-        );
-      });
 
     app.commands.addCommand('tutorial:open', {
       // code to run when this command is executed
