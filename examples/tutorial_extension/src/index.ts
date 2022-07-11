@@ -5,7 +5,7 @@ import {
 import { MainAreaWidget } from '@jupyterlab/apputils';
 import { ILauncher } from '@jupyterlab/launcher';
 import { ISettingRegistry } from '@jupyterlab/settingregistry';
-import { jupyterIcon } from '@jupyterlab/ui-components';
+import { imageIcon } from '@jupyterlab/ui-components';
 
 import { TutorialWidget } from './widget';
 
@@ -16,7 +16,11 @@ const plugin: JupyterFrontEndPlugin<void> = {
   id: 'tutorial-extension:plugin',
   autoStart: true,
   optional: [ISettingRegistry, ILauncher],
-  activate: (app: JupyterFrontEnd, settingRegistry: ISettingRegistry | null, launcher: ILauncher | null) => {
+  activate: (
+    app: JupyterFrontEnd,
+    settingRegistry: ISettingRegistry | null,
+    launcher: ILauncher | null
+  ) => {
     console.log('JupyterLab extension tutorial-extension is activated!');
 
     // Load the settings from schema/plugin.json
@@ -25,10 +29,16 @@ const plugin: JupyterFrontEndPlugin<void> = {
       settingRegistry
         .load(plugin.id)
         .then(settings => {
-          console.log('tutorial-extension settings loaded:', settings.composite);
+          console.log(
+            'tutorial-extension settings loaded:',
+            settings.composite
+          );
         })
         .catch(reason => {
-          console.error('Failed to load settings for tutorial-extension.', reason);
+          console.error(
+            'Failed to load settings for tutorial-extension.',
+            reason
+          );
         });
     }
 
@@ -38,12 +48,14 @@ const plugin: JupyterFrontEndPlugin<void> = {
         const widget = new TutorialWidget();
         const main = new MainAreaWidget({ content: widget });
         main.title.label = 'Tutorial Widget';
-        main.title.icon = jupyterIcon;
+        main.title.icon = imageIcon;
         main.title.caption = widget.title.label;
+
+        // TODO: add a button to refresh image
 
         app.shell.add(main, 'main');
       },
-      icon: jupyterIcon,
+      icon: imageIcon,
       label: 'Open Tutorial Widget'
     });
 
