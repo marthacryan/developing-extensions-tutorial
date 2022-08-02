@@ -37,10 +37,11 @@ jlpm playwright install
 cd ..
 ```
 
-3. Execute the [Playwright](https://playwright.dev/docs/intro) tests:
+3. Start a token-less jupyter server and execute the [Playwright](https://playwright.dev/docs/intro) tests:
 
 ```sh
 cd ./ui-tests
+jupyter lab --config jupyter_server_test_config.py &
 jlpm playwright test
 ```
 
@@ -48,6 +49,10 @@ Test results will be shown in the terminal. In case of any test failures, the te
 will be opened in your browser at the end of the tests execution; see
 [Playwright documentation](https://playwright.dev/docs/test-reporters#html-reporter)
 for configuring that behavior.
+
+A special Jupyter lab server must be running for the tests to work. The special server 
+disables a number of security features that interfere with testing. Be sure to stop the server 
+when you are done testing.
 
 ## Update the tests snapshots
 
